@@ -5,6 +5,8 @@ VisualStudioVersion = 17.2.32414.248
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ates.Tool", "src\Ates.Tool\Ates.Tool.csproj", "{75F860B7-74B9-41E7-AE4A-373ED19F5AC0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ates.Tool.Test", "test\Ates.Tool.Test\Ates.Tool.Test.csproj", "{150C0470-C1F4-473A-B1E9-88167E3A575D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{75F860B7-74B9-41E7-AE4A-373ED19F5AC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75F860B7-74B9-41E7-AE4A-373ED19F5AC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75F860B7-74B9-41E7-AE4A-373ED19F5AC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{150C0470-C1F4-473A-B1E9-88167E3A575D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{150C0470-C1F4-473A-B1E9-88167E3A575D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{150C0470-C1F4-473A-B1E9-88167E3A575D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{150C0470-C1F4-473A-B1E9-88167E3A575D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
