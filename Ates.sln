@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ates.Tool", "src\Ates.Tool\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ates.Tool.Test", "test\Ates.Tool.Test\Ates.Tool.Test.csproj", "{150C0470-C1F4-473A-B1E9-88167E3A575D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ates", "src\Ates\Ates.csproj", "{6A2F0E84-05C1-4AA1-8E54-C3B5D7D4BD37}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{150C0470-C1F4-473A-B1E9-88167E3A575D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{150C0470-C1F4-473A-B1E9-88167E3A575D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{150C0470-C1F4-473A-B1E9-88167E3A575D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A2F0E84-05C1-4AA1-8E54-C3B5D7D4BD37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A2F0E84-05C1-4AA1-8E54-C3B5D7D4BD37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A2F0E84-05C1-4AA1-8E54-C3B5D7D4BD37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A2F0E84-05C1-4AA1-8E54-C3B5D7D4BD37}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
