@@ -4,7 +4,16 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <ApplicationIcon>AtesIconNugetOrg.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="AtesIconNugetOrg.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="AtesIconNugetOrg.ico" />
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\test\Ates.Tool.Test\Ates.Tool.Test.csproj" />

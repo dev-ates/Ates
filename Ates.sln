@@ -9,11 +9,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ates.Tool.Test", "test\Ates
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ates", "src\Ates\Ates.csproj", "{6A2F0E84-05C1-4AA1-8E54-C3B5D7D4BD37}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "asset", "asset", "{4041B582-098B-496B-AB06-EAA9661B691B}"
-	ProjectSection(SolutionItems) = preProject
-		asset\AtesIconNugetOrg.ico = asset\AtesIconNugetOrg.ico
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
