@@ -1,22 +1,32 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <ApplicationIcon>AtesIconNugetOrg.ico</ApplicationIcon>
+	<ApplicationIcon>AtesIconNugetOrg.ico</ApplicationIcon>
+	<PackageIcon>AtesIcon.png</PackageIcon>
+	<PackageTags>ates, tool</PackageTags>
+	<Company>Ates</Company>
+	<Version>1.0.0</Version>
+	<Authors>dev-ates</Authors>
+	<Product>Ates</Product>
+	<Copyright>2022</Copyright>
   </PropertyGroup>
-
-  <ItemGroup>
-    <None Remove="AtesIconNugetOrg.ico" />
-  </ItemGroup>
 
   <ItemGroup>
     <Content Include="AtesIconNugetOrg.ico" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\test\Ates.Tool.Test\Ates.Tool.Test.csproj" />
+    <PackageReference Include="Ates.Tool" Version="1.0.0" />
   </ItemGroup>
+	
+	<ItemGroup>
+		<None Update="AtesIcon.png">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
 
 </Project>
