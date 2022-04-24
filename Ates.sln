@@ -3,11 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32414.248
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ates.Tool", "src\Ates.Tool\Ates.Tool.csproj", "{75F860B7-74B9-41E7-AE4A-373ED19F5AC0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ates.Tool", "src\Ates.Tool\Ates.Tool.csproj", "{75F860B7-74B9-41E7-AE4A-373ED19F5AC0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ates.Tool.Test", "test\Ates.Tool.Test\Ates.Tool.Test.csproj", "{150C0470-C1F4-473A-B1E9-88167E3A575D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ates.Tool.Test", "test\Ates.Tool.Test\Ates.Tool.Test.csproj", "{150C0470-C1F4-473A-B1E9-88167E3A575D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ates", "src\Ates\Ates.csproj", "{6A2F0E84-05C1-4AA1-8E54-C3B5D7D4BD37}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ates", "src\Ates\Ates.csproj", "{6A2F0E84-05C1-4AA1-8E54-C3B5D7D4BD37}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "asset", "asset", "{4041B582-098B-496B-AB06-EAA9661B691B}"
+	ProjectSection(SolutionItems) = preProject
+		asset\AtesIconNugetOrg.ico = asset\AtesIconNugetOrg.ico
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
