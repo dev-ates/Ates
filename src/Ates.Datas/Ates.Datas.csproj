@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -8,7 +8,8 @@
 	<PackageIcon>AtesIcon.png</PackageIcon>
 	<PackageTags>ates, tool, repositories</PackageTags>
 	<Company>Ates</Company>
-	<Version>1.0.0</Version>
+	<Version>1.1.0</Version>
+	<AssemblyVersion>1.1.0</AssemblyVersion>
 	<Authors>dev-ates</Authors>
 	<Product>Ates.Datas</Product>
 	<Copyright>2022</Copyright>
@@ -19,6 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.4" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
   </ItemGroup>
 

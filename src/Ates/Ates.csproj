@@ -8,7 +8,8 @@
 	<PackageIcon>AtesIcon.png</PackageIcon>
 	<PackageTags>ates, tool</PackageTags>
 	<Company>Ates</Company>
-	<Version>1.0.0</Version>
+	<Version>1.1.0</Version>
+	<AssemblyVersion>1.1.0</AssemblyVersion>
 	<Authors>dev-ates</Authors>
 	<Product>Ates</Product>
 	<Copyright>2022</Copyright>
@@ -19,7 +20,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Ates.Tool" Version="1.0.0" />
+    <PackageReference Include="Ates.Datas" Version="1.1.0" />
+    <PackageReference Include="Ates.Tool" Version="1.0.1" />
   </ItemGroup>
 	
 	<ItemGroup>

@@ -1,0 +1,49 @@
+﻿namespace Ates.Datas;
+
+using Microsoft.EntityFrameworkCore;
+
+public abstract class WriteRepository<TEntity> : Repository<TEntity>, IWriteRepository<TEntity> where TEntity : class, IEntity
+{
+    public WriteRepository(DbContext context) : base(context)
+    {
+    }
+
+    public virtual async Task Insert(TEntity entity)
+    {
+        if (entity is null)
+        {
+            throw new ArgumentNullException(nameof(entity));
+        }
+
+        _ = await this.set.AddAsync(entity);
+    }
+
+    public virtual async Task Delete(TEntity entity)
+    {
+        if (entity is null)
+        {
+            throw new ArgumentNullException(nameof(entity));
+        }
+
+        _ = this.set.Remove(entity);
+
+        await Task.CompletedTask;
+    }
+
+    public virtual async Task Update(TEntity entity)
+    {
+        if (entity is null)
+        {
+            throw new ArgumentNullException(nameof(entity));
+        }
+
+        _ = this.set.Update(entity);
+
+        await Task.CompletedTask;
+    }
+
+    public virtual async Task<Int32> Commit()
+    {
+        return await this.context.SaveChangesAsync();
+    }
+}
