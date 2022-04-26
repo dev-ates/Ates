@@ -4,20 +4,15 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <ApplicationIcon>AtesIconNugetOrg.ico</ApplicationIcon>
     <PackageIcon>AtesIcon.png</PackageIcon>
     <PackageTags>tools</PackageTags>
     <Company>Ates</Company>
-    <Version>1.0.1</Version>
-	<AssemblyVersion>1.0.1</AssemblyVersion>
+    <Version>1.0.2</Version>
+	<AssemblyVersion>1.0.2</AssemblyVersion>
     <Authors>dev-ates</Authors>
     <Product>Ates.Tool</Product>
     <Copyright>2022</Copyright>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Content Include="AtesIconNugetOrg.ico" />
-  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
