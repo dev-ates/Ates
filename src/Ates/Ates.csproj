@@ -7,14 +7,15 @@
 	<PackageIcon>AtesIcon.png</PackageIcon>
 	<PackageTags>ates, tool</PackageTags>
 	<Company>Ates</Company>
-	<Version>1.1.1</Version>
-	<AssemblyVersion>1.1.1</AssemblyVersion>
+	<Version>1.2.0</Version>
+	<AssemblyVersion>1.2.0</AssemblyVersion>
 	<Authors>dev-ates</Authors>
 	<Product>Ates</Product>
 	<Copyright>2022</Copyright>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Ates.AspNetCore" Version="1.0.0" />
     <PackageReference Include="Ates.Datas" Version="1.1.1" />
     <PackageReference Include="Ates.Tool" Version="1.0.2" />
   </ItemGroup>

@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ates.Datas", "src\Ates.Data
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ates.Datas.Test", "test\Ates.Datas.Test\Ates.Datas.Test.csproj", "{D1B9B36D-CB14-48AE-83EE-4D1C379395E4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ates.AspNetCore", "src\Ates.AspNetCore\Ates.AspNetCore.csproj", "{B9E414A1-EF03-4C75-9E79-E47106879AAE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{D1B9B36D-CB14-48AE-83EE-4D1C379395E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1B9B36D-CB14-48AE-83EE-4D1C379395E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1B9B36D-CB14-48AE-83EE-4D1C379395E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9E414A1-EF03-4C75-9E79-E47106879AAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9E414A1-EF03-4C75-9E79-E47106879AAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9E414A1-EF03-4C75-9E79-E47106879AAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9E414A1-EF03-4C75-9E79-E47106879AAE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
