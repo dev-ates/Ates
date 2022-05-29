@@ -2,7 +2,7 @@
 
 using Microsoft.EntityFrameworkCore;
 
-public abstract class WriteRepository<TEntity, TId> : Repository<TEntity, TId> where TEntity : class, IEntity<TId>
+public abstract class WriteRepository<TEntity, TId> : Repository<TEntity, TId> where TEntity : class, IEntity<TId> where TId : notnull
 {
     public WriteRepository(DbContext context) : base(context)
     {
@@ -14,7 +14,6 @@ public abstract class WriteRepository<TEntity, TId> : Repository<TEntity, TId> w
         {
             throw new ArgumentNullException(nameof(entity));
         }
-
         _ = await this.set.AddAsync(entity);
     }
 
@@ -24,9 +23,7 @@ public abstract class WriteRepository<TEntity, TId> : Repository<TEntity, TId> w
         {
             throw new ArgumentNullException(nameof(entity));
         }
-
         _ = this.set.Remove(entity);
-
         await Task.CompletedTask;
     }
 
@@ -36,14 +33,12 @@ public abstract class WriteRepository<TEntity, TId> : Repository<TEntity, TId> w
         {
             throw new ArgumentNullException(nameof(entity));
         }
-
         _ = this.set.Update(entity);
-
         await Task.CompletedTask;
     }
 
-    public virtual async Task<Int32> Commit()
+    public virtual async Task<Int32> Commit(CancellationToken cancellationToken = default)
     {
-        return await this.context.SaveChangesAsync();
+        return await this.context.SaveChangesAsync(cancellationToken);
     }
 }

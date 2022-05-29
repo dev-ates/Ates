@@ -2,7 +2,7 @@
 
 using Microsoft.EntityFrameworkCore;
 
-public abstract class Repository<TEntity, TId> where TEntity : class, IEntity<TId>
+public abstract class Repository<TEntity, TId> where TEntity : class, IEntity<TId> where TId : notnull
 {
     protected readonly DbContext context;
     protected readonly DbSet<TEntity> set;
