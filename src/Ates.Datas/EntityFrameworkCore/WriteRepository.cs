@@ -1,8 +1,8 @@
-﻿namespace Ates.Datas;
+﻿namespace Ates.Datas.EntityFrameworkCore;
 
 using Microsoft.EntityFrameworkCore;
 
-public abstract class WriteRepository<TEntity> : Repository<TEntity>, IWriteRepository<TEntity> where TEntity : class, IEntity
+public abstract class WriteRepository<TEntity, TId> : Repository<TEntity, TId> where TEntity : class, IEntity<TId>
 {
     public WriteRepository(DbContext context) : base(context)
     {

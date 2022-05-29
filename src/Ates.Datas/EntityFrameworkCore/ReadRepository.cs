@@ -1,9 +1,9 @@
-﻿namespace Ates.Datas;
+﻿namespace Ates.Datas.EntityFrameworkCore;
 
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 
-public abstract class ReadRepository<TEntity> : Repository<TEntity>, IReadRepository<TEntity> where TEntity : class, IEntity
+public abstract class ReadRepository<TEntity, TId> : Repository<TEntity, TId> where TEntity : class, IEntity<TId>
 {
     public ReadRepository(DbContext context) : base(context)
     {
@@ -26,14 +26,14 @@ public abstract class ReadRepository<TEntity> : Repository<TEntity>, IReadReposi
         return result ?? throw new NullReferenceException();
     }
 
-    public virtual async Task<TEntity> GetById(Guid id)
+    public virtual async Task<TEntity> GetById(TId id)
     {
-        if (id == Guid.Empty)
+        if (id == null)
         {
             throw new ArgumentOutOfRangeException(nameof(id));
         }
 
-        var result = await this.GetAll().FirstOrDefaultAsync(e => e.Id == id);
+        var result = await this.GetAll().FirstOrDefaultAsync(e => e.Id.Equals(id));
 
         return result ?? throw new NullReferenceException();
     }
