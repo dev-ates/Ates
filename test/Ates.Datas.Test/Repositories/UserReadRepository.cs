@@ -1,5 +1,6 @@
 ﻿namespace Ates.Datas.Test.Repositories;
 
+using Ates.Datas.EntityFrameworkCore;
 using Ates.Datas.Test.Models;
 using Microsoft.EntityFrameworkCore;
 
