@@ -1,8 +1,8 @@
-﻿namespace Ates.Datas;
+﻿namespace Ates.Datas.EntityFrameworkCore;
 
 using Microsoft.EntityFrameworkCore;
 
-public abstract class Repository<TEntity> : IRepository<TEntity> where TEntity : class, IEntity
+public abstract class Repository<TEntity, TId> where TEntity : class, IEntity<TId> where TId : notnull
 {
     protected readonly DbContext context;
     protected readonly DbSet<TEntity> set;

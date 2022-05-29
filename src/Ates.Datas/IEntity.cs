@@ -1,8 +1,5 @@
 ﻿namespace Ates.Datas;
-public interface IEntity
+public interface IEntity<TId> where TId : notnull
 {
-    public Guid Id
-    {
-        get; set;
-    }
+    public TId Id { get; set; }
 }
