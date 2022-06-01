@@ -7,8 +7,8 @@
 	<PackageIcon>AtesIcon.png</PackageIcon>
 	<PackageTags>ates, tool</PackageTags>
 	<Company>Ates</Company>
-	<Version>1.3.4</Version>
-	<AssemblyVersion>1.3.4</AssemblyVersion>
+	<Version>1.3.5</Version>
+	<AssemblyVersion>1.3.5</AssemblyVersion>
 	<Authors>dev-ates</Authors>
 	<Product>Ates</Product>
 	<Copyright>2022</Copyright>

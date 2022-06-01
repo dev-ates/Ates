@@ -12,4 +12,9 @@ public abstract class Repository<TEntity, TId> where TEntity : class, IEntity<TI
         this.context = context;
         this.set = context.Set<TEntity>();
     }
+
+    public virtual async Task<Int32> Commit(CancellationToken cancellationToken = default)
+    {
+        return await this.context.SaveChangesAsync(cancellationToken);
+    }
 }
