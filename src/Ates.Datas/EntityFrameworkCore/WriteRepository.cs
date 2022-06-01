@@ -36,9 +36,4 @@ public abstract class WriteRepository<TEntity, TId> : Repository<TEntity, TId> w
         _ = this.set.Update(entity);
         await Task.CompletedTask;
     }
-
-    public virtual async Task<Int32> Commit(CancellationToken cancellationToken = default)
-    {
-        return await this.context.SaveChangesAsync(cancellationToken);
-    }
 }
