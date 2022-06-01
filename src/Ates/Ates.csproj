@@ -7,8 +7,8 @@
 	<PackageIcon>AtesIcon.png</PackageIcon>
 	<PackageTags>ates, tool</PackageTags>
 	<Company>Ates</Company>
-	<Version>1.3.2</Version>
-	<AssemblyVersion>1.3.2</AssemblyVersion>
+	<Version>1.3.4</Version>
+	<AssemblyVersion>1.3.4</AssemblyVersion>
 	<Authors>dev-ates</Authors>
 	<Product>Ates</Product>
 	<Copyright>2022</Copyright>
@@ -16,9 +16,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Ates.AspNetCore" Version="1.1.1" />
-    <PackageReference Include="Ates.Datas" Version="1.2.0" />
-    <PackageReference Include="Ates.Tool" Version="1.0.2" />
+    <ProjectReference Include="..\Ates.AspNetCore\Ates.AspNetCore.csproj" />
+    <ProjectReference Include="..\Ates.Datas\Ates.Datas.csproj" />
+    <ProjectReference Include="..\Ates.Tool\Ates.Tool.csproj" />
   </ItemGroup>
 	
 	<ItemGroup>
