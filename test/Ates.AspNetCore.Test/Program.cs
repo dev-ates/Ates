@@ -1,4 +1,5 @@
 using Ates.AspNetCore.JWToken;
+using Ates.AspNetCore.Test.Settings;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +11,9 @@ var key = "De n eme ola rak yazilm is keydir sdf df";
 builder.Services.AddSingleton<JWTAuthenticationManager>(new JWTAuthenticationManager(key));
 
 builder.Services.JWTAddServices(key);
+
+builder.Services.Configure<MailServiceSettings>(
+    builder.Configuration.GetSection("MailServiceSettings"));
 
 var app = builder.Build();
 
