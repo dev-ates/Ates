@@ -10,10 +10,10 @@ public static class ServiceRegister
             .AddAtesToolsServices();
     }
 
-    public static IServiceCollection AddAtesServices<TFluentValidatorAssembly>(this IServiceCollection services, TFluentValidatorAssembly assembly)
+    public static IServiceCollection AddAtesServices<TFluentValidatorAssembly>(this IServiceCollection services, TFluentValidatorAssembly assembly, String jwtKey)
     {
         return services
-            .AddAtesAspNetCoreServices(assembly)
+            .AddAtesAspNetCoreServices(assembly, jwtKey)
             .AddAtesToolsServices();
     }
 }
