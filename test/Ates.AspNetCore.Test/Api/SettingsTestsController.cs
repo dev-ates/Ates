@@ -2,7 +2,7 @@
 
 namespace Ates.AspNetCore.Test.Api;
 
-using Ates.AspNetCore.Test.Settings;
+using Ates.AspNetCore.MailService;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 

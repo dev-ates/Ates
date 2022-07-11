@@ -1,5 +1,5 @@
 using Ates.AspNetCore.JWToken;
-using Ates.AspNetCore.Test.Settings;
+using Ates.AspNetCore.MailService;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,6 +14,9 @@ builder.Services.JWTAddServices(key);
 
 builder.Services.Configure<MailServiceSettings>(
     builder.Configuration.GetSection("MailServiceSettings"));
+
+builder.Services.AddSingleton<IMailService, MailService>();
+builder.Services.AddSingleton<IVerificationMailService, VerificationMailService>();
 
 var app = builder.Build();
 
